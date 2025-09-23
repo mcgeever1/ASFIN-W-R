@@ -31,20 +31,6 @@ The analysis employs three regression specifications:
 
 All models consistently yield a marginal propensity to spend on welfare of ~0.216, with R² ≈ 0.59.
 
-## Repository Structure
-├── paper/
-│   └── McGeever_State_Welfare_Analysis.pdf   # Full academic paper
-├── code/
-│   ├── 01_data_cleaning.do                   # Data preparation
-│   ├── 02_regression_analysis.do             # Main analysis
-│   └── 03_robustness_checks.do              # Alternative specifications
-├── data/
-│   ├── README.md                             # Data sources and variables
-│   └── cleaned_state_data.csv               # Analysis-ready dataset
-└── figures/
-├── welfare_tax_scatter.png              # Main relationship
-└── regional_comparison.png              # Regional heterogeneity
-
 ## Key Results
 
 | Model | Tax Coefficient | Std. Error | R² | p-value |
@@ -60,8 +46,9 @@ All models consistently yield a marginal propensity to spend on welfare of ~0.21
 To replicate this analysis:
 
 1. Download raw data from Census Bureau's [Annual Survey of State Government Finances](https://www.census.gov/programs-surveys/state.html)
-2. Run Stata `.do` files in sequence (01-03)
-3. All tables and figures will be generated in the `/output` folder
+   1.1 - Noted as "2022 Census of Governments, State Government Finance Tables" 
+3. Run Stata `.do` files in sequence (01-03)
+4. All tables and figures will be generated in the `/output` folder
 
 ## Requirements
 
